@@ -1,0 +1,65 @@
+body {
+  background-color: #e5e5e5;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  color: #14213d;
+}
+
+header {
+  text-align: center;
+  font-size: 25;
+}
+
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fca311;
+  margin-bottom: 65px;
+  font-size: 20px;
+}
+
+.section {
+  display: flex;
+}
+
+.image {
+  margin-left: 25px;
+  margin-right: 5px;
+  max-width: 500px;
+}
+
+#se-one {
+  text-align: center;
+}
+
+#se-one p {
+  padding: 0px 75px;
+}
+
+#se-two p {
+  padding: 0px 75px;
+}
+
+#se-two {
+  text-align: center;
+}
+
+#homepage {
+  margin: 50px 40px;
+}
+
+#news {
+  margin: 50px 40px;
+}
+
+#contact {
+  margin: 50px 40px;
+}
+
+#crypto {
+  margin: 50px 40px;
+}
+
+#verse {
+  margin: 50px 450px;
+  font-size: 30px;
+}
