@@ -63,3 +63,15 @@ header {
   margin: 50px 450px;
   font-size: 30px;
 }
+
+#logo {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  margin-right: 400px;
+  font-size: 25px;
+}
+
+#navimg {
+  width: 125px;
+}
