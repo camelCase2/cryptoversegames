@@ -8,6 +8,8 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap"
         rel="stylesheet"
     />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   </head>
 
   <script>
@@ -31,19 +33,26 @@
     </header>
 
     <div>
-        <div class="section">
-            <div id="se-one">
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="image" />
-                <h2>The Game</h2>
-                <p>info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info </p>
-            </div>
-            <div id="se-two">
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="image" />
-                <h2>The Game</h2>
-                <p>info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info </p>
-            </div>
+        <div class="section" id="games" style="border: 2px red solid; flex-wrap: wrap; gap: 275px; flex-direction: row">
+          
         </div>
+
     </div>
+
+  <script>
+    $(function(){
+      $.get('https://coordinateddentalnanotechnology.jaelenbot.repl.co/games', function(res){
+        res.games.forEach(game => {
+          $("#games").append(`<div class="se">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="image" />
+                <h2>${game.name}</h2>
+                <p>${game.des}</p>
+            </div>`);
+        })
+      })
+      
+    })
+  </script>
 
   </body>
 </html>

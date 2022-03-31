@@ -1,7 +1,7 @@
 body {
   background-color: #e5e5e5;
   font-family: "IBM Plex Sans Arabic", sans-serif;
-  color: #14213d;
+  color: #0d2964;
 }
 
 header {
@@ -15,6 +15,7 @@ header {
   background-color: #fca311;
   margin-bottom: 65px;
   font-size: 20px;
+  color: #14213d;
 }
 
 .section {
@@ -22,25 +23,22 @@ header {
 }
 
 .image {
-  margin-left: 25px;
-  margin-right: 5px;
   max-width: 500px;
+  border-radius: 25px;
+  margin: 0px auto;
 }
 
-#se-one {
+.se {
   text-align: center;
+  width: 300px;
 }
 
-#se-one p {
-  padding: 0px 75px;
+.se p {
+  padding: 0 75px;
 }
 
-#se-two p {
-  padding: 0px 75px;
-}
-
-#se-two {
-  text-align: center;
+.se h2 {
+  font-size: 25px;
 }
 
 #homepage {
